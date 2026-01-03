@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mamamonte-orange: #f57c00;
+  --color-mamamonte-brown: #5d4037;
+  --color-mamamonte-lightBrown: #8d6e63;
+  --color-mamamonte-bg: #fff9f0;
+  --color-mamamonte-border: #ffe0b2;
+}
+
+@layer base {
+  body {
+    @apply bg-mamamonte-bg text-mamamonte-brown font-['Noto_Sans_KR',_sans-serif];
+  }
+}

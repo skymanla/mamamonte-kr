@@ -1,0 +1,76 @@
+{
+  "header": {
+    "title": "Mamamonte - Guide for Self-Directed Children",
+    "subtitle": "Self-directed learning methodology to awaken your child's potential",
+    "nav": {
+      "intro": "Introduction",
+      "benefits": "Benefits"
+    }
+  },
+  "intro": {
+    "seo": {
+      "title": "Mamamonte - Introduction to Self-Directed Learning",
+      "description": "Introducing Mamamonte's self-directed learning methodology that fosters children's independence through a prepared environment and free choice."
+    },
+    "hero": {
+      "title": "How to help a child learn on their own?",
+      "description": "Mamamonte proposes an environment where children can find the joy of learning themselves and grow independently. Self-directed learning is not just studying alone, but a process of choosing and concentrating according to inner motivation."
+    },
+    "card1": {
+      "title": "1. Prepared Environment",
+      "description": "A space organized with educational materials and tools suitable for the child's developmental stage is needed. Low shelves and intuitive layouts that allow children to take out and put back items independently instill independence."
+    },
+    "card2": {
+      "title": "2. Free Choice and Respect",
+      "description": "Let the child choose what to do today. When children are immersed in activities of their own choosing, their concentration and responsibility are maximized."
+    },
+    "card3": {
+      "title": "3. Parents as Observers",
+      "description": "Rather than trying to teach, watch quietly how the child interacts. The secret to not hindering a child's sense of achievement is to intervene only when help is truly needed."
+    },
+    "card4": {
+      "title": "4. Value of Mistakes and Repetition",
+      "description": "It's okay to be wrong. In the process of correcting errors and repeating by themselves, children realize deeper principles and gain confidence."
+    },
+    "quote": "\"Help me to do it by myself.\" - Maria Montessori"
+  },
+  "benefits": {
+    "seo": {
+      "title": "Mamamonte - Benefits of Self-Directed Learning",
+      "description": "Check out the 6 key benefits children gain when they learn on their own, including independence, critical thinking, and improved self-esteem."
+    },
+    "hero": {
+      "title": "Amazing Changes Brought by Self-Directed Learning",
+      "description": "When a child becomes the master of learning, they develop core competencies for the future beyond simple knowledge acquisition."
+    },
+    "items": {
+      "independence": {
+        "title": "Cultivating Self-Direction and Independence",
+        "description": "Children develop strong independence and responsibility in the process of setting and executing goals themselves."
+      },
+      "critical": {
+        "title": "Critical Thinking and Problem-Solving Skills",
+        "description": "The process of finding the best way by facing challenges directly nurtures creative thinking and logical problem-solving power."
+      },
+      "motivation": {
+        "title": "Intrinsic Motivation for Learning",
+        "description": "Learning that starts from one's own curiosity rather than external coercion makes learning itself a joy."
+      },
+      "selfesteem": {
+        "title": "Improved Self-Esteem and Sense of Achievement",
+        "description": "Experiences of small successes build belief in oneself, leading to healthy self-esteem."
+      },
+      "lifelong": {
+        "title": "Laying the Foundation for Lifelong Learning",
+        "description": "Children who have learned how to learn on their own are not afraid to acquire new knowledge even as adults."
+      },
+      "concentration": {
+        "title": "High Concentration and Immersion",
+        "description": "The experience of being deeply immersed in a chosen activity greatly helps brain development and emotional stability."
+      }
+    }
+  },
+  "footer": {
+    "copy": "&copy; 2026 Mamamonte"
+  }
+}
