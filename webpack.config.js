@@ -87,6 +87,7 @@ export default {
       patterns: [
         { from: 'robots.txt', to: '.' },
         { from: 'sitemap.xml', to: '.' },
+        { from: 'ads.txt', to: '.' },
       ],
     }),
     ...(isProduction ? [
