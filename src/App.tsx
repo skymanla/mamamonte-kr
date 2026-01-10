@@ -8,11 +8,11 @@ const SelfDirectedLearning = lazy(() => import('./components/SelfDirectedLearnin
 const LearningBenefits = lazy(() => import('./components/LearningBenefits'))
 
 const App: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation()
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-  };
+    i18n.changeLanguage(lng)
+  }
 
   return (
     <HelmetProvider>

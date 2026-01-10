@@ -1,9 +1,9 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
+import React from 'react'
+import { Helmet } from 'react-helmet-async'
+import { useTranslation } from 'react-i18next'
 
 const SelfDirectedLearning: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <div className="leading-relaxed">
@@ -46,7 +46,7 @@ const SelfDirectedLearning: React.FC = () => {
         <p>{t('intro.quote')}</p>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default SelfDirectedLearning;
+export default SelfDirectedLearning

@@ -1,9 +1,9 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { useTranslation } from 'react-i18next';
+import React from 'react'
+import { Helmet } from 'react-helmet-async'
+import { useTranslation } from 'react-i18next'
 
 const LearningBenefits: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   const benefitKeys = [
     'independence',
@@ -12,7 +12,7 @@ const LearningBenefits: React.FC = () => {
     'selfesteem',
     'lifelong',
     'concentration'
-  ];
+  ]
 
   const icons: { [key: string]: string } = {
     independence: '🌱',
@@ -21,7 +21,7 @@ const LearningBenefits: React.FC = () => {
     selfesteem: '✨',
     lifelong: '📚',
     concentration: '🎯'
-  };
+  }
 
   return (
     <div className="leading-relaxed">
@@ -50,7 +50,7 @@ const LearningBenefits: React.FC = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LearningBenefits;
+export default LearningBenefits

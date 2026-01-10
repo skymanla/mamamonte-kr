@@ -1,7 +1,7 @@
 {
   "header": {
-    "title": "Mamamonte - Guide for Self-Directed Children",
-    "subtitle": "Self-directed learning methodology to awaken your child's potential",
+    "title": "Mamamonte - Guide for Autonomous Children",
+    "subtitle": "Autonomous learning methodology to awaken your child's potential",
     "nav": {
       "intro": "Introduction",
       "benefits": "Benefits"
@@ -9,12 +9,12 @@
   },
   "intro": {
     "seo": {
-      "title": "Mamamonte - Introduction to Self-Directed Learning",
-      "description": "Introducing Mamamonte's self-directed learning methodology that fosters children's independence through a prepared environment and free choice."
+      "title": "Mamamonte - Introduction to Autonomous Learning",
+      "description": "Introducing Mamamonte's autonomous learning methodology that fosters children's independence through a prepared environment and free choice."
     },
     "hero": {
       "title": "How to help a child learn on their own?",
-      "description": "Mamamonte proposes an environment where children can find the joy of learning themselves and grow independently. Self-directed learning is not just studying alone, but a process of choosing and concentrating according to inner motivation."
+      "description": "Mamamonte proposes an environment where children can find the joy of learning themselves and grow independently. Autonomous learning is not just studying alone, but a process of choosing and concentrating according to inner motivation."
     },
     "card1": {
       "title": "1. Prepared Environment",
@@ -36,11 +36,11 @@
   },
   "benefits": {
     "seo": {
-      "title": "Mamamonte - Benefits of Self-Directed Learning",
+      "title": "Mamamonte - Benefits of Autonomous Learning",
       "description": "Check out the 6 key benefits children gain when they learn on their own, including independence, critical thinking, and improved self-esteem."
     },
     "hero": {
-      "title": "Amazing Changes Brought by Self-Directed Learning",
+      "title": "Amazing Changes Brought by Autonomous Learning",
       "description": "When a child becomes the master of learning, they develop core competencies for the future beyond simple knowledge acquisition."
     },
     "items": {

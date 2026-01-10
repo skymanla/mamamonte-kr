@@ -4,6 +4,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import CompressionPlugin from 'compression-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -44,7 +45,14 @@ export default {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: 'ts-loader',
+        use: [
+          {
+            loader: 'ts-loader',
+            options: {
+              transpileOnly: true,
+            },
+          },
+        ],
         exclude: /node_modules/,
       },
       {
@@ -83,6 +91,7 @@ export default {
         minifyURLs: true,
       } : undefined,
     }),
+    new ForkTsCheckerWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         { from: 'robots.txt', to: '.' },
