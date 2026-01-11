@@ -6,6 +6,9 @@ import './App.css'
 
 const SelfDirectedLearning = lazy(() => import('./components/SelfDirectedLearning'))
 const LearningBenefits = lazy(() => import('./components/LearningBenefits'))
+const SelfDirectedLearningMethod = lazy(() => import('./components/SelfDirectedLearningMethod'))
+const ParentingTips = lazy(() => import('./components/ParentingTips'))
+import Footer from './components/Footer'
 
 const App: React.FC = () => {
   const { t, i18n } = useTranslation()
@@ -40,31 +43,55 @@ const App: React.FC = () => {
               </h1>
             </Link>
             <p className="text-mamamonte-lightBrown mb-6">{t('header.subtitle')}</p>
-            
+
             <nav className="flex justify-center space-x-4">
-              <NavLink 
-                to="/" 
-                className={({ isActive }) => 
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
                   `px-4 py-2 rounded-full transition-colors ${
-                    isActive 
-                      ? 'bg-mamamonte-orange text-white font-bold' 
+                    isActive
+                      ? 'bg-mamamonte-orange text-white font-bold'
                       : 'text-mamamonte-brown hover:bg-mamamonte-border'
                   }`
                 }
               >
                 {t('header.nav.intro')}
               </NavLink>
-              <NavLink 
-                to="/benefits" 
-                className={({ isActive }) => 
+              <NavLink
+                to="/benefits"
+                className={({ isActive }) =>
                   `px-4 py-2 rounded-full transition-colors ${
-                    isActive 
-                      ? 'bg-mamamonte-orange text-white font-bold' 
+                    isActive
+                      ? 'bg-mamamonte-orange text-white font-bold'
                       : 'text-mamamonte-brown hover:bg-mamamonte-border'
                   }`
                 }
               >
                 {t('header.nav.benefits')}
+              </NavLink>
+              <NavLink
+                to="/learning-method"
+                className={({ isActive }) =>
+                  `px-4 py-2 rounded-full transition-colors ${
+                    isActive
+                      ? 'bg-mamamonte-orange text-white font-bold'
+                      : 'text-mamamonte-brown hover:bg-mamamonte-border'
+                  }`
+                }
+              >
+                {t('header.nav.method')}
+              </NavLink>
+              <NavLink
+                to="/parenting-tips"
+                className={({ isActive }) =>
+                  `px-4 py-2 rounded-full transition-colors ${
+                    isActive
+                      ? 'bg-mamamonte-orange text-white font-bold'
+                      : 'text-mamamonte-brown hover:bg-mamamonte-border'
+                  }`
+                }
+              >
+                {t('header.nav.parenting')}
               </NavLink>
             </nav>
           </header>
@@ -74,13 +101,14 @@ const App: React.FC = () => {
               <Routes>
                 <Route path="/" element={<SelfDirectedLearning />} />
                 <Route path="/benefits" element={<LearningBenefits />} />
+                <Route path="/learning-method" element={<SelfDirectedLearningMethod />} />
+                <Route path="/parenting-tips" element={<ParentingTips />} />
               </Routes>
             </Suspense>
           </main>
 
-          <footer className="mt-16 text-center text-sm text-mamamonte-lightBrown border-t border-mamamonte-border pt-8">
-            <p>{t('footer.copy')}</p>
-          </footer>
+
+          <Footer />
         </div>
       </Router>
     </HelmetProvider>

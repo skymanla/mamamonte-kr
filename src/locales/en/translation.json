@@ -4,7 +4,9 @@
     "subtitle": "Autonomous learning methodology to awaken your child's potential",
     "nav": {
       "intro": "Introduction",
-      "benefits": "Benefits"
+      "benefits": "Benefits",
+      "method": "Learning Method",
+      "parenting": "Parenting Tips"
     }
   },
   "intro": {
@@ -50,7 +52,7 @@
       },
       "critical": {
         "title": "Critical Thinking and Problem-Solving Skills",
-        "description": "The process of finding the best way by facing challenges directly nurtures creative thinking and logical problem-solving power."
+        "description": "Instead of simply mesmerizing answers, children develop solid problem-solving skills through the process of asking questions themselves and finding solutions."
       },
       "motivation": {
         "title": "Intrinsic Motivation for Learning",
@@ -70,7 +72,55 @@
       }
     }
   },
+  "method": {
+    "seo": {
+      "title": "Mamamonte - Best Guide for Self-Directed Learning",
+      "description": "From goal setting to planning and evaluation. Check out the 3-step practical guide for effective self-directed learning."
+    },
+    "hero": {
+      "title": "How to Cultivate the Power to Learn on Your Own",
+      "description": "Self-directed learning is not an innate ability, but a habit that can be cultivated through practice. Introducing the 3 most effective key steps."
+    },
+    "steps": {
+      "step1": {
+        "title": "Step 1: Specific Goal Setting",
+        "description": "Instead of vaguely saying 'study well', set measurable goals like 'read 10 pages every day'. Specific goals clarify what the child needs to do, increasing execution."
+      },
+      "step2": {
+        "title": "Step 2: Strategic Planning & Action",
+        "description": "Use a study planner to let the child allocate study amount and time themselves. It becomes truly theirs only when it includes an 'output' process of explaining what was learned or writing it on a blank paper, not just passive 'input'."
+      },
+      "step3": {
+        "title": "Step 3: Objective Evaluation & Improvement",
+        "description": "Time is needed to reflect on whether today's learning went according to plan. Through metacognition that identifies 'what I know and what I don't know', you can supplement deficiencies and revise the next plan more realistically."
+      }
+    }
+  },
   "footer": {
-    "copy": "&copy; 2026 Mamamonte"
+    "copy": "Copyright © 2026 mamamonte.kr"
+  },
+  "parenting": {
+    "seo": {
+      "title": "Mamamonte - Montessori Parenting Tips",
+      "description": "From setting up the home environment to dealing with tantrums. Discover practical parenting guides based on Montessori philosophy."
+    },
+    "hero": {
+      "title": "Montessori Guide for Happy Parenting",
+      "description": "Respect your child as an individual and trust their power to grow on their own. Introducing parenting tips that make both parents and children happy."
+    },
+    "tips": {
+      "environment": {
+        "title": "1. Creating a 'Prepared Environment' for Independence",
+        "description": "Set up an environment at the child's eye level, such as low cabinets where they can take out clothes themselves, and small cups for drinking water. A safe space where they can explore freely instead of hearing 'No' fosters autonomy."
+      },
+      "respect": {
+        "title": "2. Respect & Observation: Wait until they ask for help",
+        "description": "Even if the child seems clumsy, watch rather than helping immediately. The sense of achievement when they do it themselves is the source of self-esteem. Intervening minimally only when help is needed is true respect."
+      },
+      "tantrums": {
+        "title": "3. Understanding the Tantrums",
+        "description": "Tantrums are a clumsy way for children to express their emotions or needs. Instead of scolding or giving in, first validate their feelings by saying 'You must be very upset'. Then clearly and consistently communicate what is allowed and what is not."
+      }
+    }
   }
 }
