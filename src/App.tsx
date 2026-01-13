@@ -1,13 +1,13 @@
-import React, { Suspense, lazy } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import './App.css'
 
-const SelfDirectedLearning = lazy(() => import('./components/SelfDirectedLearning'))
-const LearningBenefits = lazy(() => import('./components/LearningBenefits'))
-const SelfDirectedLearningMethod = lazy(() => import('./components/SelfDirectedLearningMethod'))
-const ParentingTips = lazy(() => import('./components/ParentingTips'))
+import SelfDirectedLearning from './components/SelfDirectedLearning'
+import LearningBenefits from './components/LearningBenefits'
+import SelfDirectedLearningMethod from './components/SelfDirectedLearningMethod'
+import ParentingTips from './components/ParentingTips'
 import Footer from './components/Footer'
 
 const App: React.FC = () => {
@@ -97,14 +97,12 @@ const App: React.FC = () => {
           </header>
 
           <main>
-            <Suspense fallback={<div className="text-center py-10 text-mamamonte-lightBrown">{t('common.loading', 'Loading...')}</div>}>
-              <Routes>
-                <Route path="/" element={<SelfDirectedLearning />} />
-                <Route path="/benefits" element={<LearningBenefits />} />
-                <Route path="/learning-method" element={<SelfDirectedLearningMethod />} />
-                <Route path="/parenting-tips" element={<ParentingTips />} />
-              </Routes>
-            </Suspense>
+            <Routes>
+              <Route path="/" element={<SelfDirectedLearning />} />
+              <Route path="/benefits" element={<LearningBenefits />} />
+              <Route path="/learning-method" element={<SelfDirectedLearningMethod />} />
+              <Route path="/parenting-tips" element={<ParentingTips />} />
+            </Routes>
           </main>
 
 
