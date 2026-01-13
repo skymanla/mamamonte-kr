@@ -28,8 +28,14 @@ const LearningBenefits: React.FC = () => {
       <Helmet>
         <title>{t('benefits.seo.title')}</title>
         <meta name="description" content={t('benefits.seo.description')} />
+        <meta name="keywords" content={t('benefits.seo.keywords')} />
+        <link rel="canonical" href="https://mamamonte.kr/benefits" />
         <meta property="og:title" content={t('benefits.seo.title')} />
         <meta property="og:description" content={t('benefits.seo.description')} />
+        <meta property="og:url" content="https://mamamonte.kr/benefits" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('benefits.seo.title')} />
+        <meta name="twitter:description" content={t('benefits.seo.description')} />
       </Helmet>
       <section className="text-center mb-12 bg-white p-8 rounded-xl shadow-sm border border-mamamonte-border">
         <h2 className="text-3xl font-bold text-mamamonte-orange mb-4">{t('benefits.hero.title')}</h2>

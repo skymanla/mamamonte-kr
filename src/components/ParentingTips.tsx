@@ -13,8 +13,14 @@ const ParentingTips: React.FC = () => {
       <Helmet>
         <title>{t('parenting.seo.title')}</title>
         <meta name="description" content={t('parenting.seo.description')} />
+        <meta name="keywords" content={t('parenting.seo.keywords')} />
+        <link rel="canonical" href="https://mamamonte.kr/parenting-tips" />
         <meta property="og:title" content={t('parenting.seo.title')} />
         <meta property="og:description" content={t('parenting.seo.description')} />
+        <meta property="og:url" content="https://mamamonte.kr/parenting-tips" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('parenting.seo.title')} />
+        <meta name="twitter:description" content={t('parenting.seo.description')} />
       </Helmet>
 
       <section className="text-center mb-12 bg-white p-8 rounded-xl shadow-sm border border-mamamonte-border">

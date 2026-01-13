@@ -10,8 +10,14 @@ const SelfDirectedLearningMethod: React.FC = () => {
       <Helmet>
         <title>{t('method.seo.title')}</title>
         <meta name="description" content={t('method.seo.description')} />
+        <meta name="keywords" content={t('method.seo.keywords')} />
+        <link rel="canonical" href="https://mamamonte.kr/learning-method" />
         <meta property="og:title" content={t('method.seo.title')} />
         <meta property="og:description" content={t('method.seo.description')} />
+        <meta property="og:url" content="https://mamamonte.kr/learning-method" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('method.seo.title')} />
+        <meta name="twitter:description" content={t('method.seo.description')} />
       </Helmet>
 
       <section className="text-center mb-12 bg-white p-8 rounded-xl shadow-sm border border-mamamonte-border">

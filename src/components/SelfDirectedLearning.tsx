@@ -10,8 +10,14 @@ const SelfDirectedLearning: React.FC = () => {
       <Helmet>
         <title>{t('intro.seo.title')}</title>
         <meta name="description" content={t('intro.seo.description')} />
+        <meta name="keywords" content={t('intro.seo.keywords')} />
+        <link rel="canonical" href="https://mamamonte.kr/" />
         <meta property="og:title" content={t('intro.seo.title')} />
         <meta property="og:description" content={t('intro.seo.description')} />
+        <meta property="og:url" content="https://mamamonte.kr/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('intro.seo.title')} />
+        <meta name="twitter:description" content={t('intro.seo.description')} />
       </Helmet>
       <section className="text-center mb-12 bg-white p-8 rounded-xl shadow-sm border border-mamamonte-border">
         <h3 className="text-2xl font-semibold mb-4 text-mamamonte-orange">{t('intro.hero.title')}</h3>
