@@ -100,7 +100,23 @@
     }
   },
   "footer": {
-    "copy": "Copyright © 2026 mamamonte.kr"
+    "copy": "Copyright © 2026 mamamonte.kr. All rights reserved.",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "contact": "お問い合わせ"
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "content": "ママモンテ(mamamonte.kr)は利用者の個人情報を保護し、関連法令を遵守します。本サイトはGoogleアドセンス広告を掲載しており、サービス提供の過程でクッキーを使用して利用者のデバイス情報を収集する場合があります。収集された情報は広告の最適化およびサービス改善のためにのみ使用されます。"
+  },
+  "terms": {
+    "title": "利用規約",
+    "content": "本サイトで提供されるすべてのコンテンツの著作権はママモンテにあります。利用者は非営利目的に限り情報を利用でき、無断転載および配布を禁止します。"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "content": "ご不明な点やご提案がございましたら、下記のメールアドレスまでご連絡ください。",
+    "email": "mama@mamamonte.kr"
   },
   "parenting": {
     "seo": {

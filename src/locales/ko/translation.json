@@ -100,7 +100,12 @@
     }
   },
   "footer": {
-    "copy": "Copyright © 2026 mamamonte.kr. All rights reserved."
+    "copy": "Copyright © 2026 mamamonte.kr. All rights reserved.",
+    "privacy": "개인정보처리방침"
+  },
+  "privacy": {
+    "title": "개인정보처리방침",
+    "content": "마마몽떼(mamamonte.kr)는 이용자의 개인정보를 보호하며, 관련 법령을 준수합니다. 본 사이트는 구글 애드센스 광고를 게재하며, 서비스 제공 과정에서 쿠키를 사용하여 이용자의 기기 정보를 수집할 수 있습니다. 수집된 정보는 광고 최적화 및 서비스 개선을 위해서만 사용됩니다."
   },
   "parenting": {
     "seo": {

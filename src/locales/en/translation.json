@@ -100,7 +100,12 @@
     }
   },
   "footer": {
-    "copy": "Copyright © 2026 mamamonte.kr"
+    "copy": "Copyright © 2026 mamamonte.kr. All rights reserved.",
+    "privacy": "Privacy Policy"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "content": "Mamamonte (mamamonte.kr) protects your privacy and complies with relevant laws. This site displays Google AdSense advertisements and may use cookies during the service provision to collect information about your device. Collected information is used only for advertisement optimization and service improvement."
   },
   "parenting": {
     "seo": {

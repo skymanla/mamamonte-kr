@@ -8,6 +8,7 @@ import SelfDirectedLearning from './components/SelfDirectedLearning'
 import LearningBenefits from './components/LearningBenefits'
 import SelfDirectedLearningMethod from './components/SelfDirectedLearningMethod'
 import ParentingTips from './components/ParentingTips'
+import PrivacyPolicy from './components/PrivacyPolicy'
 import Footer from './components/Footer'
 
 const App: React.FC = () => {
@@ -102,6 +103,7 @@ const App: React.FC = () => {
               <Route path="/benefits" element={<LearningBenefits />} />
               <Route path="/learning-method" element={<SelfDirectedLearningMethod />} />
               <Route path="/parenting-tips" element={<ParentingTips />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
             </Routes>
           </main>
 
