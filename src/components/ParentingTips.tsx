@@ -1,6 +1,6 @@
 import React from 'react'
-import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
+import SEO from './SEO'
 
 const ParentingTips: React.FC = () => {
   const { t } = useTranslation()
@@ -9,18 +9,12 @@ const ParentingTips: React.FC = () => {
 
   return (
     <div className="leading-relaxed">
-      <Helmet>
-        <title>{t('parenting.seo.title')}</title>
-        <meta name="description" content={t('parenting.seo.description')} />
-        <meta name="keywords" content={t('parenting.seo.keywords')} />
-        <link rel="canonical" href="https://mamamonte.kr/parenting-tips" />
-        <meta property="og:title" content={t('parenting.seo.title')} />
-        <meta property="og:description" content={t('parenting.seo.description')} />
-        <meta property="og:url" content="https://mamamonte.kr/parenting-tips" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t('parenting.seo.title')} />
-        <meta name="twitter:description" content={t('parenting.seo.description')} />
-      </Helmet>
+      <SEO
+        title={t('parenting.seo.title')}
+        description={t('parenting.seo.description')}
+        keywords={t('parenting.seo.keywords')}
+        canonicalPath="/parenting-tips"
+      />
 
       <section className="text-center mb-12 bg-white p-8 rounded-xl shadow-sm border border-mamamonte-border">
         <h3 className="text-2xl font-semibold mb-4 text-mamamonte-orange">{t('parenting.hero.title')}</h3>

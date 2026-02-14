@@ -19,6 +19,7 @@ export default {
     path: path.resolve(__dirname, 'dist'),
     filename: isProduction ? '[name].[contenthash].js' : '[name].bundle.js',
     chunkFilename: isProduction ? '[name].[contenthash].chunk.js' : '[name].chunk.js',
+    publicPath: '/',
     clean: true,
   },
   resolve: {
@@ -93,6 +94,23 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
+      filename: 'index.html',
+      minify: isProduction ? {
+        removeComments: true,
+        collapseWhitespace: true,
+        removeRedundantAttributes: true,
+        useShortDoctype: true,
+        removeEmptyAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        keepClosingSlash: true,
+        minifyJS: true,
+        minifyCSS: true,
+        minifyURLs: true,
+      } : undefined,
+    }),
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      filename: '404.html',
       minify: isProduction ? {
         removeComments: true,
         collapseWhitespace: true,

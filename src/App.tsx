@@ -13,6 +13,16 @@ import BlogPost from './components/BlogPost'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import Footer from './components/Footer'
 
+const NAV_ITEMS = [
+  { path: '/', labelKey: 'header.nav.intro' },
+  { path: '/benefits', labelKey: 'header.nav.benefits' },
+  { path: '/learning-method', labelKey: 'header.nav.method' },
+  { path: '/parenting-tips', labelKey: 'header.nav.parenting' },
+  { path: '/blog', labelKey: 'header.nav.blog' },
+]
+
+const LANGUAGES = ['ko', 'en', 'ja'] as const
+
 const App: React.FC = () => {
   const { t, i18n } = useTranslation()
 
@@ -20,13 +30,20 @@ const App: React.FC = () => {
     i18n.changeLanguage(lng)
   }
 
+  const activeLinkClass = ({ isActive }: { isActive: boolean }) =>
+    `px-4 py-2 rounded-full transition-colors ${
+      isActive
+        ? 'bg-mamamonte-orange text-white font-bold'
+        : 'text-mamamonte-brown hover:bg-mamamonte-border'
+    }`
+
   return (
     <HelmetProvider>
       <Router>
         <div className="max-w-4xl mx-auto p-8">
           <header className="text-center mb-8 pb-4 border-b-2 border-mamamonte-border">
             <div className="flex justify-end space-x-2 mb-4">
-              {['ko', 'en', 'ja'].map((lng) => (
+              {LANGUAGES.map((lng) => (
                 <button
                   key={lng}
                   onClick={() => changeLanguage(lng)}
@@ -47,67 +64,16 @@ const App: React.FC = () => {
             </Link>
             <p className="text-mamamonte-lightBrown mb-6">{t('header.subtitle')}</p>
 
-            <nav className="flex justify-center space-x-4">
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  `px-4 py-2 rounded-full transition-colors ${
-                    isActive
-                      ? 'bg-mamamonte-orange text-white font-bold'
-                      : 'text-mamamonte-brown hover:bg-mamamonte-border'
-                  }`
-                }
-              >
-                {t('header.nav.intro')}
-              </NavLink>
-              <NavLink
-                to="/benefits"
-                className={({ isActive }) =>
-                  `px-4 py-2 rounded-full transition-colors ${
-                    isActive
-                      ? 'bg-mamamonte-orange text-white font-bold'
-                      : 'text-mamamonte-brown hover:bg-mamamonte-border'
-                  }`
-                }
-              >
-                {t('header.nav.benefits')}
-              </NavLink>
-              <NavLink
-                to="/learning-method"
-                className={({ isActive }) =>
-                  `px-4 py-2 rounded-full transition-colors ${
-                    isActive
-                      ? 'bg-mamamonte-orange text-white font-bold'
-                      : 'text-mamamonte-brown hover:bg-mamamonte-border'
-                  }`
-                }
-              >
-                {t('header.nav.method')}
-              </NavLink>
-              <NavLink
-                to="/parenting-tips"
-                className={({ isActive }) =>
-                  `px-4 py-2 rounded-full transition-colors ${
-                    isActive
-                      ? 'bg-mamamonte-orange text-white font-bold'
-                      : 'text-mamamonte-brown hover:bg-mamamonte-border'
-                  }`
-                }
-              >
-                {t('header.nav.parenting')}
-              </NavLink>
-              <NavLink
-                to="/blog"
-                className={({ isActive }) =>
-                  `px-4 py-2 rounded-full transition-colors ${
-                    isActive
-                      ? 'bg-mamamonte-orange text-white font-bold'
-                      : 'text-mamamonte-brown hover:bg-mamamonte-border'
-                  }`
-                }
-              >
-                {t('header.nav.blog')}
-              </NavLink>
+            <nav className="flex justify-center flex-wrap gap-2 sm:space-x-4">
+              {NAV_ITEMS.map((item) => (
+                <NavLink
+                  key={item.path}
+                  to={item.path}
+                  className={activeLinkClass}
+                >
+                  {t(item.labelKey)}
+                </NavLink>
+              ))}
             </nav>
           </header>
 
@@ -122,7 +88,6 @@ const App: React.FC = () => {
               <Route path="/privacy" element={<PrivacyPolicy />} />
             </Routes>
           </main>
-
 
           <Footer />
         </div>
