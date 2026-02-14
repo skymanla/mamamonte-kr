@@ -1,6 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import SEO from './SEO'
+import { Card, HeroSection } from './ui/Layout'
 
 const LearningBenefits: React.FC = () => {
   const { t } = useTranslation()
@@ -31,22 +32,21 @@ const LearningBenefits: React.FC = () => {
         keywords={t('benefits.seo.keywords')}
         canonicalPath="/benefits"
       />
-      <section className="text-center mb-12 bg-white p-8 rounded-xl shadow-sm border border-mamamonte-border">
-        <h2 className="text-3xl font-bold text-mamamonte-orange mb-4">{t('benefits.hero.title')}</h2>
-        <p className="text-mamamonte-brown max-w-2xl mx-auto">
-          {t('benefits.hero.description')}
-        </p>
-      </section>
+      
+      <HeroSection 
+        title={t('benefits.hero.title')} 
+        description={t('benefits.hero.description')} 
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {benefitKeys.map((key) => (
-          <div key={key} className="bg-white p-6 rounded-2xl shadow-sm border border-mamamonte-border hover:shadow-md transition-shadow">
-            <div className="text-4xl mb-4">{icons[key]}</div>
-            <h4 className="text-lg font-bold text-mamamonte-brown mb-2">{t(`benefits.items.${key}.title`)}</h4>
-            <p className="text-sm text-mamamonte-lightBrown leading-relaxed">
+          <Card key={key} className="flex flex-col items-center text-center">
+            <div className="text-5xl mb-6 bg-mamamonte-bg p-4 rounded-full">{icons[key]}</div>
+            <h4 className="text-xl font-bold text-mamamonte-brown mb-3">{t(`benefits.items.${key}.title`)}</h4>
+            <p className="text-mamamonte-lightBrown leading-relaxed">
               {t(`benefits.items.${key}.description`)}
             </p>
-          </div>
+          </Card>
         ))}
       </div>
     </div>
