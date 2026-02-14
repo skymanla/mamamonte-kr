@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet-async'
+import SEO from './SEO'
 import { blogPosts } from '../data/blogPosts'
 
 const BlogList: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <Helmet>
-        <title>마마몽떼 블로그 - 몬테소리 육아 칼럼</title>
-        <meta name="description" content="몬테소리 교육 전문가가 전하는 자율적인 아이 육아법, 환경 구성, 교구 활용 팁 등을 만나보세요." />
-        <meta name="keywords" content="몬테소리 블로그, 육아 칼럼, 자율 학습, 몬테소리 환경, 육아 팁" />
-        <link rel="canonical" href="https://mamamonte.kr/blog" />
-      </Helmet>
+      <SEO
+        title="마마몽떼 블로그 - 몬테소리 육아 칼럼"
+        description="몬테소리 교육 전문가가 전하는 자율적인 아이 육아법, 환경 구성, 교구 활용 팁 등을 만나보세요."
+        keywords="몬테소리 블로그, 육아 칼럼, 자율 학습, 몬테소리 환경, 육아 팁"
+        canonicalPath="/blog"
+      />
 
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-mamamonte-orange mb-4">마마몽떼 인사이트</h2>

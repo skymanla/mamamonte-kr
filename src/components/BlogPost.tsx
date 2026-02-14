@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, Link, Navigate } from 'react-router-dom'
-import { Helmet } from 'react-helmet-async'
+import SEO from './SEO'
 import { blogPosts } from '../data/blogPosts'
 
 const BlogPost: React.FC = () => {
@@ -11,18 +11,16 @@ const BlogPost: React.FC = () => {
     return <Navigate to="/blog" replace />
   }
 
-  const ContentComponent = post.component;
+  const ContentComponent = post.component
 
   return (
     <article className="max-w-3xl mx-auto">
-      <Helmet>
-        <title>{post.title} | 마마몽떼</title>
-        <meta name="description" content={post.excerpt} />
-        <link rel="canonical" href={`https://mamamonte.kr/blog/${post.id}`} />
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.excerpt} />
-        <meta property="og:type" content="article" />
-      </Helmet>
+      <SEO
+        title={`${post.title} | 마마몽떼`}
+        description={post.excerpt}
+        canonicalPath={`/blog/${post.id}`}
+        ogType="article"
+      />
 
       <div className="mb-8 text-center">
         <div className="flex justify-center items-center space-x-2 text-sm text-gray-500 mb-4">

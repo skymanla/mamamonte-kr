@@ -22,19 +22,19 @@
     },
     "card1": {
       "title": "1. Prepared Environment",
-      "description": "A space organized with educational materials and tools suitable for the child's developmental stage is needed. Low shelves and intuitive layouts that allow children to take out and put back items independently instill independence."
+      "description": "A space organized with educational materials and tools suitable for the child's developmental stage is needed. Low shelves and intuitive layouts that allow children to take out and put back items independently instill independence and a sense of competence. This goes beyond mere tidiness, providing the foundation for children to choose and lead their own activities."
     },
     "card2": {
       "title": "2. Free Choice and Respect",
-      "description": "Let the child choose what to do today. When children are immersed in activities of their own choosing, their concentration and responsibility are maximized."
+      "description": "Let the child choose what to do today. When children are immersed in activities of their own choosing, their concentration and responsibility are maximized. By respecting the child's choices, we help them practice taking responsibility for their decisions. Freedom of choice is the most important element that allows children to follow their inner needs and developmental requirements."
     },
     "card3": {
       "title": "3. Parents as Observers",
-      "description": "Rather than trying to teach, watch quietly how the child interacts. The secret to not hindering a child's sense of achievement is to intervene only when help is truly needed."
+      "description": "Rather than trying to teach, watch quietly how the child interacts. The secret to not hindering a child's sense of achievement is to intervene only when help is truly needed. Through observation, we can accurately understand what developmental stage the child is currently in and what they are interested in."
     },
     "card4": {
       "title": "4. Value of Mistakes and Repetition",
-      "description": "It's okay to be wrong. In the process of correcting errors and repeating by themselves, children realize deeper principles and gain confidence."
+      "description": "It's okay to be wrong. In the process of correcting errors and repeating by themselves, children realize deeper principles and gain confidence. Mamamonte values the process more than the result, giving children time to repeat and explore sufficiently. Through repetitive activities, children develop muscle control and reach a state of mental concentration."
     },
     "quote": "\"Help me to do it by myself.\" - Maria Montessori"
   },
@@ -121,15 +121,30 @@
     "tips": {
       "environment": {
         "title": "1. Creating a 'Prepared Environment' for Independence",
-        "description": "Set up an environment at the child's eye level, such as low cabinets where they can take out clothes themselves, and small cups for drinking water. A safe space where they can explore freely instead of hearing 'No' fosters autonomy."
+        "description": "Set up an environment at the child's eye level, such as low cabinets where they can take out clothes themselves, and small cups for drinking water. A safe space where they can explore freely instead of hearing 'No' fosters autonomy. When children feel they can control the space they stay in, their self-esteem and autonomy grow rapidly."
       },
       "respect": {
         "title": "2. Respect & Observation: Wait until they ask for help",
-        "description": "Even if the child seems clumsy, watch rather than helping immediately. The sense of achievement when they do it themselves is the source of self-esteem. Intervening minimally only when help is needed is true respect."
+        "description": "Even if the child seems clumsy, watch rather than helping immediately. The sense of achievement when they do it themselves is the source of self-esteem. Intervening minimally only when help is needed is true respect. 'I did it myself!' is the most powerful weapon a child needs to live in the world."
       },
       "tantrums": {
         "title": "3. Understanding the Tantrums",
-        "description": "Tantrums are a clumsy way for children to express their emotions or needs. Instead of scolding or giving in, first validate their feelings by saying 'You must be very upset'. Then clearly and consistently communicate what is allowed and what is not."
+        "description": "Tantrums are a clumsy way for children to express their emotions or needs. Instead of scolding or giving in, first validate their feelings by saying 'You must be very upset'. Then clearly and consistently communicate what is allowed and what is not. While accepting emotions, firm discipline is needed for inappropriate behavior."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions (FAQ)",
+      "q1": {
+        "question": "At what age is it best to start Montessori education?",
+        "answer": "Montessori education can start from the moment of birth. 0-3 years is the period when the 'absorbent mind' is strongest, taking in the surrounding environment as it is. Just creating an environment at home that fits the child's developmental stage is a great start."
+      },
+      "q2": {
+        "question": "My house is small, how can I create a 'prepared environment'?",
+        "answer": "You don't need grand educational materials. Start by placing things the child uses in low places within their reach. Just by designating a place for things using small baskets, the child learns a sense of order and develops the power to do things themselves."
+      },
+      "q3": {
+        "question": "Is it okay if my child keeps repeating the same thing?",
+        "answer": "It's a very good sign! In Montessori education, 'repetition' is a key process for developing concentration and muscle control. Please watch without interrupting so the child can continue the activity until they are sufficiently satisfied. Through repetition, the child gains inner peace."
       }
     }
   }
