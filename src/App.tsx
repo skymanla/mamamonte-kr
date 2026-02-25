@@ -11,6 +11,9 @@ import ParentingTips from './components/ParentingTips'
 import BlogList from './components/BlogList'
 import BlogPost from './components/BlogPost'
 import PrivacyPolicy from './components/PrivacyPolicy'
+import About from './components/About'
+import FAQ from './components/FAQ'
+import Resources from './components/Resources'
 import { Container } from './components/ui/Layout'
 import Footer from './components/Footer'
 
@@ -171,6 +174,9 @@ const App: React.FC = () => {
               <Route path="/parenting-tips" element={<ParentingTips />} />
               <Route path="/blog" element={<BlogList />} />
               <Route path="/blog/:id" element={<BlogPost />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/resources" element={<Resources />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
             </Routes>
           </main>
