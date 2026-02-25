@@ -1,6 +1,6 @@
 # ONLY VIBE CODING
 
-# Mamamonte KR (마마몽떼 프로젝트)
+# Mamamonte KR (마마몽떼 With Vibe Coding)
 
 본 프로젝트는 프리미엄 몬테소리 교육 센터인 '마마몽떼'의 센터 관리 및 교육 정보 제공을 위한 웹 애플리케이션 서비스입니다.
 
