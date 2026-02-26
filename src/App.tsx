@@ -11,16 +11,16 @@ import { HelmetProvider } from "react-helmet-async"
 import { useTranslation } from "react-i18next"
 import "./App.css"
 
-import SelfDirectedLearning from "./components/SelfDirectedLearning"
-import LearningBenefits from "./components/LearningBenefits"
-import SelfDirectedLearningMethod from "./components/SelfDirectedLearningMethod"
-import ParentingTips from "./components/ParentingTips"
-import BlogList from "./components/BlogList"
-import BlogPost from "./components/BlogPost"
-import PrivacyPolicy from "./components/PrivacyPolicy"
-import About from "./components/About"
-import FAQ from "./components/FAQ"
-import Resources from "./components/Resources"
+const SelfDirectedLearning = React.lazy(() => import("./pages/SelfDirectedLearning"))
+const LearningBenefits = React.lazy(() => import("./pages/LearningBenefits"))
+const SelfDirectedLearningMethod = React.lazy(() => import("./pages/SelfDirectedLearningMethod"))
+const ParentingTips = React.lazy(() => import("./pages/ParentingTips"))
+const BlogList = React.lazy(() => import("./pages/BlogList"))
+const BlogPost = React.lazy(() => import("./pages/BlogPost"))
+const PrivacyPolicy = React.lazy(() => import("./pages/PrivacyPolicy"))
+const About = React.lazy(() => import("./pages/About"))
+const FAQ = React.lazy(() => import("./pages/FAQ"))
+const Resources = React.lazy(() => import("./pages/Resources"))
 import { Container } from "./components/ui/Layout"
 import Footer from "./components/Footer"
 import ScrollToTop from "./components/ui/ScrollToTop"
@@ -322,21 +322,23 @@ const AppContent: React.FC = () => {
           </header>
 
           <main className="min-h-[60vh]">
-            <Routes>
-              <Route path="/" element={<SelfDirectedLearning />} />
-              <Route path="/benefits" element={<LearningBenefits />} />
-              <Route
-                path="/learning-method"
-                element={<SelfDirectedLearningMethod />}
-              />
-              <Route path="/parenting-tips" element={<ParentingTips />} />
-              <Route path="/blog" element={<BlogList />} />
-              <Route path="/blog/:id" element={<BlogPost />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/resources" element={<Resources />} />
-              <Route path="/privacy" element={<PrivacyPolicy />} />
-            </Routes>
+            <React.Suspense fallback={<div className="flex justify-center items-center min-h-[60vh] text-mamamonte-orange font-bold">로딩 중...</div>}>
+              <Routes>
+                <Route path="/" element={<SelfDirectedLearning />} />
+                <Route path="/benefits" element={<LearningBenefits />} />
+                <Route
+                  path="/learning-method"
+                  element={<SelfDirectedLearningMethod />}
+                />
+                <Route path="/parenting-tips" element={<ParentingTips />} />
+                <Route path="/blog" element={<BlogList />} />
+                <Route path="/blog/:id" element={<BlogPost />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/resources" element={<Resources />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+              </Routes>
+            </React.Suspense>
           </main>
 
           <Footer />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import SEO from './SEO'
-import { Card, HeroSection } from './ui/Layout'
+import SEO from '../components/SEO'
+import { Card, HeroSection } from '../components/ui/Layout'
 
 const LearningBenefits: React.FC = () => {
   const { t } = useTranslation()
@@ -32,10 +32,10 @@ const LearningBenefits: React.FC = () => {
         keywords={t('benefits.seo.keywords')}
         canonicalPath="/benefits"
       />
-      
-      <HeroSection 
-        title={t('benefits.hero.title')} 
-        description={t('benefits.hero.description')} 
+
+      <HeroSection
+        title={t('benefits.hero.title')}
+        description={t('benefits.hero.description')}
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

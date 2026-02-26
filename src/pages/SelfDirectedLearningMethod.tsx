@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import SEO from './SEO'
+import SEO from '../components/SEO'
 
 const SelfDirectedLearningMethod: React.FC = () => {
   const { t } = useTranslation()

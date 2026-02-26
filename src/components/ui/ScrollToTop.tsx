@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false)
+  const { pathname } = useLocation()
+
+  // 페이지 이동 시 최상단으로 스크롤
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
 
   // 화면 스크롤 시 버튼 표시 여부 제어
   const toggleVisibility = () => {
