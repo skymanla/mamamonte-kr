@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import SEO from './SEO'
-import { Card, HeroSection } from './ui/Layout'
+import SEO from '../components/SEO'
+import { Card, HeroSection } from '../components/ui/Layout'
 import { blogPosts } from '../data/blogPosts'
 
 const SelfDirectedLearning: React.FC = () => {
@@ -25,19 +25,8 @@ const SelfDirectedLearning: React.FC = () => {
         description={t('intro.hero.description')}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-        <Card className="border-l-4 border-l-mamamonte-orange">
-          <h4 className="text-xl font-bold text-mamamonte-orange mb-2">{t(`intro.card1.title`)}</h4>
-          <p className="text-mamamonte-brown leading-relaxed text-sm">{t(`intro.card1.description`)}</p>
-        </Card>
-        <Card className="border-l-4 border-l-mamamonte-orange">
-          <h4 className="text-xl font-bold text-mamamonte-orange mb-2">{t(`intro.card2.title`)}</h4>
-          <p className="text-mamamonte-brown leading-relaxed text-sm">{t(`intro.card2.description`)}</p>
-        </Card>
-      </div>
-
       {/* 최신 블로그 포스트 섹션 */}
-      <section className="mb-12">
+      <section className="mb-16">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-3xl font-bold text-mamamonte-orange">최신 블로그 글</h2>
           <Link
@@ -53,19 +42,19 @@ const SelfDirectedLearning: React.FC = () => {
             <Link
               key={post.id}
               to={`/blog/${post.id}`}
-              className="bg-white rounded-xl shadow-sm border border-mamamonte-border hover:shadow-md transition-all duration-300 overflow-hidden group"
+              className="bg-white rounded-xl shadow-sm border border-mamamonte-border hover:shadow-md transition-all duration-300 overflow-hidden group flex flex-col h-full"
             >
-              <div className="p-6">
+              <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xs bg-orange-100 text-mamamonte-orange px-2 py-1 rounded-md font-semibold">
+                  <span className="text-xs bg-orange-100 text-mamamonte-orange px-2 py-1 rounded-md font-semibold shrink-0">
                     {post.category}
                   </span>
-                  <span className="text-xs text-gray-500">{post.date}</span>
+                  <span className="text-xs text-gray-500 shrink-0">{post.date}</span>
                 </div>
                 <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-mamamonte-orange transition-colors line-clamp-2">
                   {post.title}
                 </h3>
-                <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed">
+                <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed mt-auto">
                   {post.excerpt}
                 </p>
               </div>
@@ -73,6 +62,17 @@ const SelfDirectedLearning: React.FC = () => {
           ))}
         </div>
       </section>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <Card className="border-l-4 border-l-mamamonte-orange h-full">
+          <h4 className="text-xl font-bold text-mamamonte-orange mb-2">{t(`intro.card1.title`)}</h4>
+          <p className="text-mamamonte-brown leading-relaxed text-sm">{t(`intro.card1.description`)}</p>
+        </Card>
+        <Card className="border-l-4 border-l-mamamonte-orange h-full">
+          <h4 className="text-xl font-bold text-mamamonte-orange mb-2">{t(`intro.card2.title`)}</h4>
+          <p className="text-mamamonte-brown leading-relaxed text-sm">{t(`intro.card2.description`)}</p>
+        </Card>
+      </div>
 
       <section className="text-center italic text-xl text-mamamonte-lightBrown py-12 border-t border-mamamonte-border">
         <p className="max-w-2xl mx-auto line-height-relaxed">

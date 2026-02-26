@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import SEO from './SEO'
+import SEO from '../components/SEO'
 import { blogPosts } from '../data/blogPosts'
 
 const BlogList: React.FC = () => {

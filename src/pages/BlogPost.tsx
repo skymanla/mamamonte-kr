@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, Link, Navigate } from 'react-router-dom'
-import SEO from './SEO'
+import SEO from '../components/SEO'
 import { blogPosts } from '../data/blogPosts'
 
 const BlogPost: React.FC = () => {
@@ -38,7 +38,9 @@ const BlogPost: React.FC = () => {
       </div>
 
       <div className="prose prose-lg max-w-none text-gray-700 leading-9 md:leading-10 space-y-6 prose-p:mb-6 prose-headings:mb-8 prose-headings:text-mamamonte-orange prose-headings:font-bold prose-a:text-mamamonte-orange hover:prose-a:underline prose-strong:text-gray-900">
-        <ContentComponent />
+        <React.Suspense fallback={<div className="py-10 text-center text-gray-500">포스트 로딩 중...</div>}>
+          <ContentComponent />
+        </React.Suspense>
       </div>
 
       <div className="mt-12 pt-8 border-t border-gray-200">
