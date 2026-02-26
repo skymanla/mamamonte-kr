@@ -1,4 +1,10 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react'
+
+declare global {
+  interface Window {
+    adsbygoogle: unknown[]
+  }
+}
 
 interface AdSenseProps {
   /**
@@ -50,21 +56,22 @@ export const AdSense = ({
   style = { display: 'block' },
   className = '',
 }: AdSenseProps) => {
-  const adRef = useRef<HTMLModElement>(null);
-  const isAdPushed = useRef(false);
+  const adRef = useRef<HTMLModElement>(null)
+  const isAdPushed = useRef(false)
 
   useEffect(() => {
     try {
       // AdSense 스크립트가 로드되었는지 확인
-      if (typeof window !== 'undefined' && (window as any).adsbygoogle && !isAdPushed.current) {
+      if (typeof window !== 'undefined' && window.adsbygoogle && !isAdPushed.current) {
         // 광고 푸시
-        ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-        isAdPushed.current = true;
+        window.adsbygoogle = window.adsbygoogle || []
+        window.adsbygoogle.push({})
+        isAdPushed.current = true
       }
     } catch (error) {
-      console.error('AdSense error:', error);
+      console.error('AdSense error:', error)
     }
-  }, []);
+  }, [])
 
   return (
     <ins
@@ -76,5 +83,5 @@ export const AdSense = ({
       data-ad-format={adFormat}
       data-full-width-responsive={fullWidthResponsive.toString()}
     />
-  );
-};
+  )
+}
