@@ -26,12 +26,14 @@ const SelfDirectedLearning: React.FC = () => {
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-        {[1, 2, 3, 4].map((num) => (
-          <Card key={num} className="border-l-4 border-l-mamamonte-orange">
-            <h4 className="text-xl font-bold text-mamamonte-orange mb-3">{t(`intro.card${num}.title`)}</h4>
-            <p className="text-mamamonte-brown leading-relaxed">{t(`intro.card${num}.description`)}</p>
-          </Card>
-        ))}
+        <Card className="border-l-4 border-l-mamamonte-orange">
+          <h4 className="text-xl font-bold text-mamamonte-orange mb-2">{t(`intro.card1.title`)}</h4>
+          <p className="text-mamamonte-brown leading-relaxed text-sm">{t(`intro.card1.description`)}</p>
+        </Card>
+        <Card className="border-l-4 border-l-mamamonte-orange">
+          <h4 className="text-xl font-bold text-mamamonte-orange mb-2">{t(`intro.card2.title`)}</h4>
+          <p className="text-mamamonte-brown leading-relaxed text-sm">{t(`intro.card2.description`)}</p>
+        </Card>
       </div>
 
       {/* 최신 블로그 포스트 섹션 */}

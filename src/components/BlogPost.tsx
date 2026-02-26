@@ -37,7 +37,7 @@ const BlogPost: React.FC = () => {
         </h1>
       </div>
 
-      <div className="prose prose-lg max-w-none text-gray-700 leading-8 prose-headings:text-mamamonte-orange prose-headings:font-bold prose-a:text-mamamonte-orange hover:prose-a:underline prose-strong:text-gray-900">
+      <div className="prose prose-lg max-w-none text-gray-700 leading-9 md:leading-10 space-y-6 prose-p:mb-6 prose-headings:mb-8 prose-headings:text-mamamonte-orange prose-headings:font-bold prose-a:text-mamamonte-orange hover:prose-a:underline prose-strong:text-gray-900">
         <ContentComponent />
       </div>
 
