@@ -17,7 +17,7 @@
     "react-dom": "^18.2.0",
     "react-helmet-async": "^2.0.5",
     "react-i18next": "^16.5.1",
-    "react-router-dom": "^7.11.0"
+    "react-router-dom": "^7.16.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.6",
@@ -54,5 +54,8 @@
     "webpack": "^5.104.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2"
+  },
+  "overrides": {
+    "serialize-javascript": "^7.0.5"
   }
 }
