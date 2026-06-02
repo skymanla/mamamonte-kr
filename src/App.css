@@ -13,3 +13,35 @@
     @apply bg-mamamonte-bg text-mamamonte-brown font-['Noto_Sans_KR',_sans-serif];
   }
 }
+
+/* ── 상담 위젯(CounselWidget) 애니메이션 ── */
+@keyframes counsel-pop-in {
+  from { opacity: 0; transform: translateY(6px) scale(0.98); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes counsel-sheet-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes counsel-dot {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+  40%           { transform: translateY(-4px); opacity: 1; }
+}
+@keyframes counsel-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(245, 124, 0, 0.45); }
+  70%  { box-shadow: 0 0 0 12px rgba(245, 124, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(245, 124, 0, 0); }
+}
+.counsel-pop-in   { animation: counsel-pop-in 0.28s ease-out both; }
+.counsel-sheet-up { animation: counsel-sheet-up 0.3s ease-out both; }
+.counsel-dot      { animation: counsel-dot 1.2s ease-in-out infinite; }
+.counsel-pulse    { animation: counsel-pulse 2.4s ease-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .counsel-pop-in,
+  .counsel-sheet-up,
+  .counsel-dot,
+  .counsel-pulse {
+    animation: none;
+  }
+}

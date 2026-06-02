@@ -6,6 +6,7 @@ import CompressionPlugin from 'compression-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import { fileURLToPath } from 'url';
+import webpack from 'webpack';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -92,6 +93,10 @@ export default {
     ],
   },
   plugins: [
+    // 브라우저 번들에 API 베이스 URL 주입. 미설정 시 chatClient 가 호스트로 dev/prod(ai-api.trigger.kr)를 판별한다.
+    new webpack.DefinePlugin({
+      __API_BASE_URL__: JSON.stringify(process.env.API_BASE_URL || ''),
+    }),
     new HtmlWebpackPlugin({
       template: './index.html',
       filename: 'index.html',

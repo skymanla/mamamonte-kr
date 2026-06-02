@@ -24,6 +24,7 @@ const Resources = React.lazy(() => import("./pages/Resources"))
 import { Container } from "./components/ui/Layout"
 import Footer from "./components/Footer"
 import ScrollToTop from "./components/ui/ScrollToTop"
+import CounselWidget from "./components/counsel/CounselWidget"
 
 type NavItem = {
   path?: string;
@@ -352,6 +353,7 @@ const App: React.FC = () => {
       <Router>
         <AppContent />
         <ScrollToTop />
+        <CounselWidget />
       </Router>
     </HelmetProvider>
   )
